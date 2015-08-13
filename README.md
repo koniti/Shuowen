@@ -1,5 +1,5 @@
-# 説文解字注をCSVに
-説文解字注をCSVファイル、SQL文、.ods(OpenDocumentスプレッドシート) にしたものです。  
+# 說文解字注CSV
+説文解字注をCSVファイル、SQL文、.ods(OpenDocumentスプレッドシート) にしたものです。CSVにした範囲は第一篇〜第十四篇です。  
 もとのデータ(swjz.xml)は、以下の「漢字データベースプロジェクト」で公開されているデータ(GPL)です。  
 https://github.com/cjkvi/  
 http://kanji-database.sourceforge.net/  
@@ -8,24 +8,24 @@ http://kanji-database.sourceforge.net/
 ## CSVのフォーマット
 　カラムは以下になります。漢字データベースプロジェクトに記されていた属性を使用しています。  
   
-　章番号, 文字id, 文字の画像ファイル名(除く拡張子), 文字, この文字を形作る文字, 説文解字注の文章  
+    章番号, 文字id, 文字の画像ファイル名(除く拡張子), 文字, この文字を形作る文字, 説文解字注の文章  
   
   
 ## ファイル
-　img/	文字の画像ファイル  
-　swjz.csv	CSVファイル。1万行超えます。  
-　swjz_all.ods	swjz.csvをodsにしたもの  
-　swjz_A.ods	swjz_all.odsの前半半分  
-　swjz_B.ods	swjz_all.odsの後半半分  
+　img/　　　　　文字の画像ファイル  
+　swjz.csv　　　CSVファイル。1万行超えます。  
+　swjz_all.ods　swjz.csvをodsにしたもの  
+　swjz_A.ods　　swjz_all.odsの前半半分  
+　swjz_B.ods　　swjz_all.odsの後半半分  
 
-　splitCSV/split.sh	swjz.csvをchapterごとに分割するbashスクリプトです。  
+　splitCSV/split.sh　swjz.csvをchapterごとに分割するbashスクリプトです。  
   
-　create.sql	create table SQL文  
-　swjz.sql	insert SQL文  
+　create.sql　　create table SQL文  
+　swjz.sql　　　insert SQL文  
   
-　swjz2csv.php	swjz.xmlを読み込んで、CSV(SQL)、pngを出力するスクリプト  
+　swjz2csv.php　swjz.xmlを読み込んで、CSV(SQL)、pngを出力するスクリプト  
   
-　swjz.xml	オリジナルXMLファイル  
+　swjz.xml　　　オリジナルXMLファイル  
   
   
 ## 文字画像
