@@ -28,6 +28,7 @@ http://kanji-database.sourceforge.net/
 　swjz.xml　　　オリジナルXMLファイル  
 
 　UnDescribedChars.txt	swjz.xmlに記載されていない文字  
+  makePNG.php	画像を一文字出力  
   
   
 ## 文字画像
