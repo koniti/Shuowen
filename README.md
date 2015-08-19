@@ -26,6 +26,8 @@ http://kanji-database.sourceforge.net/
 　swjz2csv.php　swjz.xmlを読み込んで、CSV(SQL)、pngを出力するスクリプト  
   
 　swjz.xml　　　オリジナルXMLファイル  
+
+　UnDescribedChars.txt	swjz.xmlに記載されていない文字  
   
   
 ## 文字画像
