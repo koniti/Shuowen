@@ -8,12 +8,13 @@ function helpExit() {
   print <<<HD1
 
   -h : help
-  -f<filename> : 説文解字注xmlファイルの指定。default=stdin
+  -f <filename> : 説文解字注xmlファイルの指定。default=stdin
   -c : CSV形式で出力。default
   -s : SQL文で出力。
   -p : 文字画像PNG出力
-  -o<directory> : 文字画像PNG出力先directory
-  -t<filename> : ttfファイルの指定。default=./shuowen.ttf
+  -o <directory> : 文字画像PNG出力先directory
+  -t <filename> : ttfファイルの指定。default=./shuowen.ttf
+
 
 HD1;
   exit;
@@ -131,6 +132,10 @@ if ( array_key_exists('t', $options) ) { $outPNG = 1;
 }
 if ( array_key_exists('o', $options) ) { $outPNG = 1;
   $pngOutDir = $options['o'];
+}
+
+if ( array_key_exists('h', $options) ) {
+    helpExit();
 }
 
 
